@@ -1,60 +1,57 @@
 {
-    "name": "@aeroware/aeroclient",
-    "version": "3.6.1",
-    "description": "advanced discord.js command handler framework with many extra utilities",
-    "main": "dist/index.js",
-    "scripts": {
-        "dev": "nodemon index.test.ts",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/aero-ware/aeroclient.git"
-    },
-    "keywords": [
-        "discord.js",
-        "aeroware",
-        "command-handler",
-        "discord.js-framework",
-        "discord"
-    ],
-    "contributors": [
-        {
-            "name": "Dheeraj Prakash"
-        },
-        {
-            "name": "cursorsdottsx"
-        }
-    ],
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/aero-ware/aeroclient/issues"
-    },
-    "homepage": "https://aero-ware.github.io/aeroclient",
-    "dependencies": {
-        "@aeroware/discord-utils": "^1.0.1",
-        "@aeroware/logger": "^2.6.0",
-        "@keyv/mongo": "^1.1.0",
-        "@keyv/mysql": "^1.1.4",
-        "@keyv/postgres": "^1.0.16",
-        "@keyv/redis": "^2.1.2",
-        "@keyv/sqlite": "^2.0.2",
-        "axios": "^0.21.1",
-        "date-fns": "^2.16.1",
-        "discord-parse-utils": "^1.0.3",
-        "discord.js": "^12.5.1",
-        "dotenv": "^8.2.0",
-        "keyv": "^4.0.3",
-        "mongodb": "^3.6.4",
-        "mongoose": "^5.12.0",
-        "ms": "^2.1.3",
-        "slash-commands": "^1.3.1"
-    },
-    "devDependencies": {
-        "@types/axios": "^0.14.0",
-        "@types/date-fns": "^2.6.0",
-        "@types/keyv": "^3.1.1",
-        "@types/ms": "^0.7.31",
-        "typescript": "^4.1.3"
-    }
+  "name": "@aeroware/aeroclient",
+  "version": "3.6.1",
+  "description": "advanced discord.js command handler framework with many extra utilities",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon index.test.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aero-ware/aeroclient.git"
+  },
+  "keywords": [
+    "discord.js",
+    "aeroware",
+    "command-handler",
+    "discord.js-framework",
+    "discord"
+  ],
+  "contributors": [
+    "Dheeraj Prakash",
+    "cursorsdottsx"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aero-ware/aeroclient/issues"
+  },
+  "homepage": "https://aero-ware.github.io/aeroclient",
+  "dependencies": {
+    "@aeroware/discord-utils": "^1.0.1",
+    "@aeroware/logger": "^2.6.0",
+    "@keyv/mongo": "^1.1.0",
+    "@keyv/mysql": "^1.1.4",
+    "@keyv/postgres": "^1.0.16",
+    "@keyv/redis": "^2.1.2",
+    "@keyv/sqlite": "^2.0.2",
+    "axios": "^0.21.1",
+    "date-fns": "^2.16.1",
+    "discord-parse-utils": "^1.0.3",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "keyv": "^4.0.3",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.12.0",
+    "ms": "^2.1.3",
+    "slash-commands": "^1.3.1"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/date-fns": "^2.6.0",
+    "@types/keyv": "^3.1.1",
+    "@types/ms": "^0.7.31",
+    "typescript": "^4.1.3"
+  },
+  "author": ""
 }

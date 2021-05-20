@@ -1,7 +1,7 @@
 import { readdir, readFile, stat } from "fs/promises";
 import { join } from "path";
 import AeroClient from "../AeroClient";
-import { EventHandler, Locales, SlashCommand } from "../types";
+import { EventHandler, Locales } from "../types";
 
 export default class Loader {
     private client: AeroClient;
@@ -261,34 +261,5 @@ export default class Loader {
         });
     }
 
-    public async loadInteractions(path: string) {
-        if (this.client.clientOptions.dev?.dontLoad?.folders?.includes(path))
-            return;
-
-        const directory = require.main?.path
-            ? join(require.main.path, path)
-            : path;
-
-        const names = new Set<string>();
-
-        const traverse = async (directory: string) => {
-            const commands = await readdir(directory);
-
-            for (const c of commands) {
-                const filePath = join(directory, c);
-
-                if ((await stat(filePath)).isDirectory()) {
-                    if (
-                        !this.client.clientOptions.dev?.dontLoad?.folders?.includes(
-                            c
-                        )
-                    )
-                        await traverse(filePath);
-                    continue;
-                }
-
-                const file: SlashCommand = (await import(filePath)).default;
-            }
-        };
-    }
+    
 }
